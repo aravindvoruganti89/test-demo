@@ -4,7 +4,7 @@ RUN mkdir -p /opt/ciena/packages
 
 RUN apt-get update && apt-get install -y openjdk-8-jdk
 
-COPY /var/lib/jenkins/workspace/package/target/test-demo-0.0.1-SNAPSHOT.jar /opt/ciena/packages
+COPY /home/ec2-user/test-demotest-demo-0.0.1-SNAPSHOT.jar /opt/ciena/packages
 
 WORKDIR /opt/ciena/packages
 
